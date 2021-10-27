@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap");
+header {
+  font-family: "Shrikhand";
+}
+
+main {
+  font-family: "Roboto";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  text-align: center;
+  box-shadow: 0 0 0.5rem 1px gray;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  background: #eaeaea;
+  margin-top: 6px;
+}
+.localisation .localisation--icon {
+  font-size: 25px;
+  padding: 15px 20px 0 0;
+}
+
+.explorer {
+  text-align: center;
+  background: #f6f6f6;
+}
+.explorer h2 {
+  font-size: 2rem;
+  margin-top: 0;
+  padding-top: 30px;
+}
+.explorer p {
+  font: 1rem;
+}
+.explorer .explorer--button {
+  background-image: linear-gradient(to top, #ff79da, #9356dc);
+  width: 220px;
+  height: 50px;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 25px;
+  font-weight: bolder;
+  margin: 30px 0 45px 0;
+  box-shadow: 4px 4px 11px 0 #9a9a9a;
+  transition: 0.2s ease-in-out;
+}
+.explorer .explorer--button:hover {
+  transform: scale(1.1);
+  opacity: 0.95;
+}
+
+.menu {
+  margin: 1.5rem;
+  padding: 1.5rem;
+}
+.menu .menu-choix {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 800px) {
+  .menu .menu-choix {
+    flex-direction: row;
+  }
+}
+.menu .menu-choix-content {
+  background: #f6f6f6;
+  display: flex;
+  align-items: baseline;
+  min-width: 300px;
+  width: 100%;
+  height: 70px;
+  margin-bottom: 15px;
+  margin-right: 25px;
+  border-radius: 25px;
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  padding-top: 10px;
+  white-space: nowrap;
+  box-sizing: border-box;
+  transition: 0.2s ease-in-out;
+  box-shadow: 8px 8px 8px -7px #9a9a9a;
+}
+@media (min-width: 800px) {
+  .menu .menu-choix-content {
+    width: 30%;
+  }
+}
+.menu .menu-choix-content p {
+  margin-right: 30px;
+  margin-left: -15px;
+  background: #9356dc;
+  border-radius: 50%;
+  padding: 4px 10px;
+  color: white;
+}
+.menu .menu-choix-content i {
+  font-size: 2rem;
+  margin-right: 20px;
+}
+
+.explorer--button:hover {
+  transform: scale(1.1);
+  opacity: 0.95;
+}
+
+.menu-choix-content:hover {
+  transform: scale(1.05);
+  color: #9356dc;
+  opacity: 0.95;
+}
+
+.restaurants {
+  background: #f6f6f6;
+  padding: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.restaurants h3 {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 0 3rem;
+}
+.restaurants .restaurants-carte {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.restaurants .restaurants-carte .restaurants-carte-choix {
+  width: 700px;
+  position: relative;
+  margin-bottom: 60px;
+  border-radius: 1rem;
+  box-shadow: 8px 8px 8px -7px #9a9a9a;
+}
+@media (max-width: 800px) {
+  .restaurants .restaurants-carte .restaurants-carte-choix {
+    width: 90%;
+  }
+}
+.restaurants .restaurants-carte .restaurants-carte-choix img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  background-size: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+.restaurants .restaurants-carte .restaurants-carte-choix span {
+  display: block;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  justify-content: initial;
+  background: #99e2d0;
+  color: #008766;
+  padding: 7px;
+  font-size: 15px;
+}
+.restaurants .restaurants-carte .restaurants-carte-choix a {
+  cursor: pointer;
+}
+.restaurants .restaurants-carte .restaurants-carte-choix .carte-description {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-radius: 0 0 1rem 1rem;
+}
+.restaurants .restaurants-carte .restaurants-carte-choix .carte-description p {
+  position: absolute;
+  padding-top: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,45 @@
+header {
+  text-align: center;
+  box-shadow: 0 0 0.5rem 1px gray;
+  margin: 0;
+  padding: 20px 0;
+}
+.localisation {
+  display: flex;
+  justify-content: center;
+  background: #eaeaea;
+  margin-top: 6px;
+  .localisation--icon {
+    font-size: 25px;
+    padding: 15px 20px 0 0;
+  }
+}
+.explorer {
+  text-align: center;
+  background: #f6f6f6;
+  h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    padding-top: 30px;
+  }
+  p {
+    font: 1rem;
+  }
+  .explorer--button {
+    background-image: linear-gradient(to top, #ff79da, #9356dc);
+    width: 220px;
+    height: 50px;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    border-radius: 25px;
+    font-weight: bolder;
+    margin: 30px 0 45px 0;
+    box-shadow: 4px 4px 11px 0 #9a9a9a;
+    transition: 0.2s ease-in-out;
+  }
+  .explorer--button:hover {
+    transform: scale(1.1);
+    opacity: 0.95;
+  }
+}
