@@ -1,3 +1,4 @@
+@import "../utils/color.scss";
 header {
   text-align: center;
   box-shadow: 0 0 0.5rem 1px gray;
@@ -16,7 +17,7 @@ header {
 }
 .explorer {
   text-align: center;
-  background: #f6f6f6;
+  background: $colorFont;
   h2 {
     font-size: 2rem;
     margin-top: 0;
@@ -26,7 +27,7 @@ header {
     font: 1rem;
   }
   .explorer--button {
-    background-image: linear-gradient(to top, #ff79da, #9356dc);
+    background-image: linear-gradient(to top, $colorSecondaire, $colorPrimaire);
     width: 220px;
     height: 50px;
     color: white;

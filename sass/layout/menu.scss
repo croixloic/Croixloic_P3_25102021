@@ -1,20 +1,24 @@
 @import "../utils/shadow.scss";
-
+@import "../utils/color.scss";
 .menu {
   margin: 1.5rem;
   padding: 1.5rem;
+  h3 {
+    font-size: 26px;
+    font-weight: bold;
+  }
 
   .menu-choix {
     display: flex;
     flex-direction: column;
-    @media (min-width : 800px) {
-      flex-direction:row ;
-      
+    @media (min-width: 800px) {
+      flex-direction: row;
+      flex-wrap: wrap;
     }
   }
 
   .menu-choix-content {
-    background: #f6f6f6;
+    background: $colorFont;
     display: flex;
     align-items: baseline;
     min-width: 300px;
@@ -30,15 +34,15 @@
     white-space: nowrap;
     box-sizing: border-box;
     transition: 0.2s ease-in-out;
-    @media (min-width: 800px){
+    @media (min-width: 800px) {
       width: 30%;
-  }
+    }
     @include base-shadow;
 
     p {
       margin-right: 30px;
       margin-left: -15px;
-      background: #9356dc;
+      background: $colorPrimaire;
       border-radius: 50%;
       padding: 4px 10px;
       color: white;
@@ -49,5 +53,4 @@
       margin-right: 20px;
     }
   }
-
 }

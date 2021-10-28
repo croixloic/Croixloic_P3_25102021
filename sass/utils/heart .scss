@@ -1,0 +1,10 @@
+@import "../utils/color.scss";
+@mixin heart-color {
+    background-image: linear-gradient( to left, $colorPrimaire, $colorSecondaire);
+    background-clip: border-box;
+    background: -webkit-linear-gradient(to left, $colorPrimaire, $colorSecondaire);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+   
+}
