@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap");
-header {
-  font-family: "Shrikhand";
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+.header {
+  text-align: center;
+  box-shadow: 0 0 0.5rem 1px gray;
+  margin: 0;
+  padding: 20px 0;
 }
 
 main {
@@ -22,11 +26,9 @@ a {
   font-family: "Shrikhand";
 }
 
-header {
-  text-align: center;
-  box-shadow: 0 0 0.5rem 1px gray;
-  margin: 0;
-  padding: 20px 0;
+header h1 {
+  font-family: "Shrikhand";
+  position: relative;
 }
 
 .localisation {
@@ -68,6 +70,24 @@ header {
 .explorer .explorer--button:hover {
   transform: scale(1.1);
   opacity: 0.95;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 0;
+}
+#header i {
+  font-size: 30px;
+  position: absolute;
+  left: 30px;
+  padding-top: 25px;
+}
+
+.banner-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
 }
 
 .menu {
@@ -251,6 +271,102 @@ header {
 }
 .footer .footer-contact-info i {
   padding: 10px;
+}
+
+.box {
+  background-color: #f6f6f6;
+  border-radius: 30px;
+  max-width: 1280px;
+  z-index: 1;
+  position: relative;
+  margin: -50px auto 0 auto;
+}
+.box .box-titre {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+.box .box-titre h2 {
+  margin: 0;
+  font-family: "Shrikhand";
+  font-size: 26px;
+}
+.box .box-titre i {
+  font-size: 28px;
+  transition: 0.3s ease-in-out;
+}
+.box .box-titre i:hover {
+  background-image: linear-gradient(to left, #9356DC, #FF79DA);
+  background-clip: border-box;
+  background: -webkit-linear-gradient(to left, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+@media (min-width: 1100px) {
+  .box .box-menu {
+    width: 30%;
+  }
+}
+.box .box-menu h3 {
+  text-transform: uppercase;
+  position: relative;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+.box .box-menu h3:after {
+  width: 2.5rem;
+  background: #99E2D0;
+  position: absolute;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+  content: "";
+}
+.box .box-menu .menu-item {
+  background: white;
+  border-radius: 1.5rem;
+  display: flex;
+  padding: 1rem;
+  margin: 1rem 0;
+  overflow: hidden;
+}
+.box .box-menu .menu-item .menu-item-description {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  flex: 1;
+}
+.box .box-menu .menu-item .menu-item-description h4 {
+  margin: 0;
+}
+.box .box-menu .menu-item .menu-item-description p {
+  margin-bottom: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.box .box-menu .menu-item .prix {
+  display: flex;
+  align-items: flex-end;
+  text-transform: uppercase;
+  margin-right: 30px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.box .box-menu .menu-item .check {
+  position: relative;
+  background: #99E2D0;
+  width: 4rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: -1rem -5rem -1rem -1rem;
+  transition: 0.5s;
+}
+.box .box-menu .menu-item:hover .check, .box .box-menu .menu-item:hover .prix {
+  transform: translateX(-62px);
 }
 
 /*# sourceMappingURL=style.css.map */
