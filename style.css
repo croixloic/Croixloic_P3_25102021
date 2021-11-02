@@ -54,7 +54,8 @@ header h1 {
 .explorer p {
   font: 1rem;
 }
-.explorer .explorer--button {
+
+.explorer--button {
   background-image: linear-gradient(to top, #FF79DA, #9356DC);
   width: 220px;
   height: 50px;
@@ -66,8 +67,10 @@ header h1 {
   margin: 30px 0 45px 0;
   box-shadow: 4px 4px 11px 0 #9a9a9a;
   transition: 0.2s ease-in-out;
+  cursor: pointer;
 }
-.explorer .explorer--button:hover {
+
+.explorer--button:hover {
   transform: scale(1.1);
   opacity: 0.95;
 }
@@ -91,8 +94,8 @@ header h1 {
 }
 
 .menu {
-  margin: 1.5rem;
-  padding: 1.5rem;
+  margin: 1rem;
+  padding: 1rem;
 }
 .menu h3 {
   font-size: 26px;
@@ -125,6 +128,7 @@ header h1 {
   white-space: nowrap;
   box-sizing: border-box;
   transition: 0.2s ease-in-out;
+  max-width: 100%;
   box-shadow: 8px 8px 8px -7px #9a9a9a;
 }
 @media (min-width: 800px) {
@@ -158,6 +162,11 @@ header h1 {
 
 .restaurants-carte-choix:hover {
   transform: scale(1.05);
+  opacity: 0.95;
+}
+
+.box-button:hover {
+  transform: scale(1.1);
   opacity: 0.95;
 }
 
@@ -276,7 +285,7 @@ header h1 {
 .box {
   background-color: #f6f6f6;
   border-radius: 30px;
-  max-width: 1280px;
+  max-width: 1380px;
   z-index: 1;
   position: relative;
   margin: -50px auto 0 auto;
@@ -304,9 +313,11 @@ header h1 {
   -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
-@media (min-width: 1100px) {
+@media (min-width: 1250px) {
   .box .box-menu {
-    width: 30%;
+    max-width: 100%;
+    display: flex;
+    overflow: hidden;
   }
 }
 .box .box-menu h3 {
@@ -328,18 +339,30 @@ header h1 {
   background: white;
   border-radius: 1.5rem;
   display: flex;
+  flex-wrap: wrap;
   padding: 1rem;
   margin: 1rem 0;
   overflow: hidden;
+  text-overflow: ellipsis;
+  box-shadow: 8px 8px 8px -7px #9a9a9a;
+}
+@media (min-width: 1250px) {
+  .box .box-menu .menu-item {
+    width: 340px;
+  }
 }
 .box .box-menu .menu-item .menu-item-description {
   display: flex;
   flex-direction: column;
   white-space: nowrap;
   flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .box .box-menu .menu-item .menu-item-description h4 {
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .box .box-menu .menu-item .menu-item-description p {
   margin-bottom: 0;
@@ -355,7 +378,6 @@ header h1 {
   transition: 0.5s;
 }
 .box .box-menu .menu-item .check {
-  position: relative;
   background: #99E2D0;
   width: 4rem;
   display: flex;
@@ -365,8 +387,42 @@ header h1 {
   margin: -1rem -5rem -1rem -1rem;
   transition: 0.5s;
 }
-.box .box-menu .menu-item:hover .check, .box .box-menu .menu-item:hover .prix {
+.box .box-menu .menu-item:hover .check {
   transform: translateX(-62px);
+}
+.box .box-menu .menu-item:hover .prix {
+  transform: translateX(-62px);
+  margin-left: 65px;
+}
+.box .box-menu .menu-item:hover .check-icon {
+  transform: rotate(360deg);
+}
+.box .box-menu .check-icon {
+  color: #99E2D0;
+  background: white;
+  border-radius: 100px;
+  font-size: 18px;
+  padding: 1px 3px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.box .box-command {
+  display: flex;
+  justify-content: center;
+}
+.box .box-command .box-button {
+  background-image: linear-gradient(to top, #FF79DA, #9356DC);
+  width: 220px;
+  height: 50px;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 25px;
+  font-weight: bolder;
+  margin: 30px 0 45px 0;
+  box-shadow: 4px 4px 11px 0 #9a9a9a;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

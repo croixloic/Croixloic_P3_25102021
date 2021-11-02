@@ -1,8 +1,8 @@
 @import "../utils/shadow.scss";
 @import "../utils/color.scss";
 .menu {
-  margin: 1.5rem;
-  padding: 1.5rem;
+  margin: 1rem;
+  padding: 1rem;
   h3 {
     font-size: 26px;
     font-weight: bold;
@@ -34,6 +34,7 @@
     white-space: nowrap;
     box-sizing: border-box;
     transition: 0.2s ease-in-out;
+    max-width: 100%;
     @media (min-width: 800px) {
       width: 30%;
     }
