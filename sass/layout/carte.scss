@@ -59,6 +59,7 @@
       margin: 1rem 0;
       overflow: hidden;
       text-overflow: ellipsis;
+      cursor: pointer;
       @media (min-width: 1250px) {
         width: 340px;
       }
