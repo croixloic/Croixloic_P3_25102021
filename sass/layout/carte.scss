@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import "../utils/heart\ .scss";
 @import "../utils/shadow.scss";
+@import "../utils/animation.scss";
 .box {
   background-color: $colorFont;
   border-radius: 30px;
@@ -60,6 +61,13 @@
       overflow: hidden;
       text-overflow: ellipsis;
       cursor: pointer;
+      animation: up $anim-dur forwards;
+      animation-fill-mode: both;
+      @for $i from 1 through 5 {
+        &:nth-child(#{$i}) {
+          animation-delay: 0.5s * $i;
+        }
+      }
       @media (min-width: 1250px) {
         width: 340px;
       }

@@ -22,6 +22,9 @@ a {
   color: black;
 }
 
+.footer {
+  font-family: "Roboto";
+}
 .footer h4 {
   font-family: "Shrikhand";
 }
@@ -237,7 +240,7 @@ header h1 {
 }
 .restaurants .restaurants-carte .restaurants-carte-choix .carte-description i {
   font-size: 28px;
-  transition: 0.3s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 .restaurants .restaurants-carte .restaurants-carte-choix .carte-description i:hover {
   background-image: linear-gradient(to left, #9356DC, #FF79DA);
@@ -282,6 +285,16 @@ header h1 {
   padding: 10px;
 }
 
+@keyframes up {
+  from {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .box {
   background-color: #f6f6f6;
   border-radius: 30px;
@@ -345,7 +358,24 @@ header h1 {
   overflow: hidden;
   text-overflow: ellipsis;
   cursor: pointer;
+  animation: up 2s forwards;
+  animation-fill-mode: both;
   box-shadow: 8px 8px 8px -7px #9a9a9a;
+}
+.box .box-menu .menu-item:nth-child(1) {
+  animation-delay: 0.5s;
+}
+.box .box-menu .menu-item:nth-child(2) {
+  animation-delay: 1s;
+}
+.box .box-menu .menu-item:nth-child(3) {
+  animation-delay: 1.5s;
+}
+.box .box-menu .menu-item:nth-child(4) {
+  animation-delay: 2s;
+}
+.box .box-menu .menu-item:nth-child(5) {
+  animation-delay: 2.5s;
 }
 @media (min-width: 1250px) {
   .box .box-menu .menu-item {
