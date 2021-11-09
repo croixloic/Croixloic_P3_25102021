@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import "../utils/color.scss";
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background: white;
+  opacity: 0.9;
+  animation: loader-disparer 0.5s forwards;
+  animation-delay: 5s;
+  transform-origin: top;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+@keyframes loader-disparer {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+.loader-logo {
+  position: absolute;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 25px;
+  @media (min-width: 800px) {
+    font-size: 2rem;
+  }
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  h1 {
+    text-align: center;
+  }
+}
+@keyframes move {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(5rem);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(5rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
+.container-couleur {
+  display: flex;
+}
+.couleur-primaire {
+  background: $colorPrimaire;
+  height: 40px;
+  width: 40px;
+  @media (min-width: 800px) {
+    height: 60px;
+    width: 60px;
+  }
+  border-radius: 50%;
+  animation: move 2s forwards ease-in-out;
+  animation-delay: -1.25s;
+  animation-iteration-count: 2;
+  margin: 0 10px;
+}
+.couleur-secondaire {
+  background: $colorSecondaire;
+  height: 40px;
+  width: 40px;
+  @media (min-width: 800px) {
+    height: 60px;
+    width: 60px;
+  }
+  border-radius: 50%;
+  animation: move 2s forwards ease-in-out;
+  animation-delay: -0.5s;
+  animation-iteration-count: 2;
+  margin: 0 10px;
+}
+.couleur-tertiaire {
+  background: $colorTertiaire;
+  height: 40px;
+  width: 40px;
+  @media (min-width: 800px) {
+    height: 60px;
+    width: 60px;
+  }
+  border-radius: 50%;
+  animation: move 2s forwards ease-in-out;
+  animation-iteration-count: 2;
+  margin: 0 10px;
+}

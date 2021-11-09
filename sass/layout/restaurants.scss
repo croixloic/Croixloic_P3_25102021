@@ -6,17 +6,17 @@
   padding: 50px 0;
   display: flex;
   flex-wrap: wrap;
-  
+
   h3 {
     font-size: 26px;
     font-weight: bold;
-    margin: 0 3rem ;
+    margin: 0 3rem;
   }
   .restaurants-carte {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
+
     .restaurants-carte-choix {
       width: 700px;
       position: relative;
@@ -24,8 +24,8 @@
       border-radius: 1rem;
       transition: 0.3s ease-in-out;
       @include base-shadow;
-      @media (max-width:800px) {
-        width: 90%;       
+      @media (max-width: 800px) {
+        width: 90%;
       }
       img {
         width: 100%;
@@ -58,7 +58,7 @@
         h4 {
           font-size: 20px;
         }
-        
+
         p {
           position: absolute;
           padding-top: 40px;
@@ -73,6 +73,4 @@
       }
     }
   }
-
 }
-
